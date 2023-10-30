@@ -33,7 +33,7 @@ public class CourseRepository {
 
     public static void init() {
         Scanner sc = null;
-        sc = new Scanner(CourseRepository.class.getClassLoader().getResourceAsStream("data.txt"), "utf-8");
+        sc = new Scanner(CourseRepository.class.getClassLoader().getResourceAsStream(DATA_FILE), "utf-8");
         List<String[]> subjectList = new ArrayList(50);
         String dataLine[] = null;
         while (sc.hasNextLine()) {
