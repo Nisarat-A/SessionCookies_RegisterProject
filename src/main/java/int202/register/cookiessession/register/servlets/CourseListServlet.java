@@ -3,6 +3,7 @@ package int202.register.cookiessession.register.servlets;
 
 import int202.register.cookiessession.register.models.CourseRepository;
 import int202.register.cookiessession.register.models.Semester;
+import jakarta.servlet.ServletContext;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
@@ -16,7 +17,10 @@ import java.util.Map;
 public class CourseListServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        request.setAttribute("semesters", Semester.getAllSemesterText());
+        ServletContext sc = getServletContext(); //อยู่ยาว
+        if (sc.getAttribute("semesters")==null) {
+            request.setAttribute("semesters", Semester.getAllSemesterText());
+        }
         getServletContext().getRequestDispatcher("/course_list.jsp").forward(request, response);
     }
 
@@ -30,7 +34,7 @@ public class CourseListServlet extends HttpServlet {
             return;
         }
         int semester = Integer.valueOf(parameterMap.get("semester")[0]);
-        request.setAttribute("semesters", Semester.getAllSemesterText());
+       // request.setAttribute("semesters", Semester.getAllSemesterText());
         request.setAttribute("selectedSemester", semester);
         request.setAttribute("subjects", CourseRepository.getSubjects(semester));
         getServletContext().getRequestDispatcher("/course_list.jsp").forward(request, response);

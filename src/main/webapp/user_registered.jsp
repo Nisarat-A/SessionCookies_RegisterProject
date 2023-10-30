@@ -12,14 +12,16 @@
 <head>
     <title>Title</title>
 </head>
-<body>
+<body style="background-color: ${bg_color}">
 <c:if test="${message!=null}">
     <h3 style="color:red">${message}</h3>
     <c:set var="link" value="course-list"></c:set>
 
 </c:if>
 <c:if test="${message==null}">
-    <c:forEach items="${courseRegistered.history}" var="entry"><h3>Semester ${entry.key}</h3>
+    <c:forEach items="${courseRegistered.history}" var="entry">
+        <h3>${Semester[entry.key]}
+    </h3>
     <hr>
     <c:forEach items="${entry.value}" var="subject"> ${subject.subjectId}, ${subject.title}, ${subject.credit}
         <br> </c:forEach>

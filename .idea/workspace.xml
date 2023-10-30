@@ -10,12 +10,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6ce190f0-ad66-4b72-a3e6-73c7aa744d20" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/int202/register/cookiessession/register/servlets/SetThemeServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/set-theme.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/int202/register/cookiessession/register/models/CourseRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/int202/register/cookiessession/register/models/CourseRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/int202/register/cookiessession/register/servlets/CourseListServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/int202/register/cookiessession/register/servlets/CourseListServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/int202/register/cookiessession/register/servlets/CourseRegisterHistory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/int202/register/cookiessession/register/servlets/CourseRegisterHistory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/int202/register/cookiessession/register/servlets/RegisterCourseServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/int202/register/cookiessession/register/servlets/RegisterCourseServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/course_list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/course_list.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/user_registered.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/user_registered.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -186,7 +185,7 @@
       <updated>1698621027076</updated>
       <workItem from="1698621030671" duration="538000" />
       <workItem from="1698621582164" duration="54000" />
-      <workItem from="1698621644358" duration="3726000" />
+      <workItem from="1698621644358" duration="5004000" />
     </task>
     <servers />
   </component>
